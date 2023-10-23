@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
 
 @Component({
@@ -12,6 +13,9 @@ export class MenuComponent implements OnInit {
     }
 
     dishes = DISHES;
-    selectedDish = DISHES[0];
+    selectedDish : Dish = DISHES[0];
 
+    onSelect(dish: Dish) {
+        this.selectedDish = dish;
+    }
 }

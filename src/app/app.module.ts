@@ -16,13 +16,15 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DishdetailComponent
   ],
   imports: [
     BrowserModule,

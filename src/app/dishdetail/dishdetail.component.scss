@@ -1,0 +1,21 @@
+.selectedDish {
+    width: 100%;
+    .mainCard {
+        width: 60%;
+    }
+    .cardComment { 
+        width: 40%;
+        padding: 2rem;
+        mat-list-item {
+            margin: 20px;
+            p {
+                margin: 0;
+            }
+
+            .sub {
+                color: #757575;
+                font-size: small;
+            }
+        }
+    }
+}
