@@ -1,4 +1,9 @@
 <div fxFlex fxLayout="row" *ngIf="dish" class="selectedDish">
+    <mat-card-actions>
+      <button mat-button (click)="goBack()">
+        Back
+      </button>
+    </mat-card-actions>
     <mat-card class="mainCard">
       <mat-card-header>
         <mat-card-title>
