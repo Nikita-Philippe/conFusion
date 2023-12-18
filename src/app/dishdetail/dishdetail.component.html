@@ -13,7 +13,7 @@
         <button mat-button [routerLink]="['/dishdetail', next]"><span class="fa fa-chevron-right fa-lg"></span></button>
       </mat-card-actions>
     </div>
-    
+      
     <div fxFlex fxLayout="row" *ngIf="dish" class="selectedDish">
       <mat-card-actions>
         <button mat-button (click)="goBack()">
@@ -26,7 +26,7 @@
             <h3>{{ dish.name | uppercase }}</h3>
           </mat-card-title>
         </mat-card-header>
-        <img mat-card-image src="{{ dish.image }}" alt="{{ dish.name }}" />
+        <img mat-card-image [src]="dish.image" alt="{{ dish.name }}" />
         <mat-card-content>
           <p>{{ dish.description }}</p>
         </mat-card-content>
